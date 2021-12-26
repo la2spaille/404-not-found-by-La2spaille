@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  vertical-align: baseline;
+  text-decoration: none;
+  text-transform: none;
+  transition: 0.15s;
+  list-style: none;
+  user-select: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Space Mono' , monospace;
+  letter-spacing: -0.035em;
+}
+
+a {
+  text-transform: uppercase;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 65px 0 0;
+  padding: 25px 45px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  background: #333333;
+}
+
+header {
+  display: flex;
+  padding: 40px 0;
+}
+
+.w-header-logo {
+  display: flex;
+  padding: 0 0 0 75px;
+}
+
+#logo {
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 25px;
+  letter-spacing: -0.08em;
+}
+
+#l-main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 160px 0 350px;
+}
+
+.l-2-units-wrapper {
+  display: flex;
+  padding: 0 75px;
+}
+
+.w-404-not-found-img {
+  width: 50%;
+}
+
+.w-404-not-found-img img {
+  width: 90%;
+  height: auto;
+}
+
+.w-404-not-found-dialog {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 45px 0 20px;
+}
+
+.w-404-not-found-dialog h1 {
+  color: #333333;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 95px;
+}
+
+.w-404-not-found-dialog p {
+  width: 380px;
+  padding: 35px 0 0;
+  color: #4F4F4F;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 20px 0;
+  }
+  .w-header-logo {
+    padding: 0 0 0 25px;
+  }
+  #l-main-section {
+    padding: 35px 0 150px;
+  }
+  .l-2-units-wrapper {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+  .w-404-not-found-img {
+    width: auto;
+    padding: 0 20px;
+  }
+  .w-404-not-found-img img {
+    width: 100%;
+  }
+  .w-404-not-found-dialog {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .w-404-not-found-dialog h1 {
+    margin: 0 -24px 0 0;
+    font-size: 48px;
+    line-height: 71px;
+  }
+  .w-404-not-found-dialog p {
+    width: 100%;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

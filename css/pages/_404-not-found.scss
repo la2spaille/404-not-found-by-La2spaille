@@ -1,0 +1,29 @@
+.w-404-not-found-img  {
+    width: 50%;
+    img {
+        width: 90%;
+        height: auto;
+    }
+}
+.w-404-not-found-dialog {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 45px 0 20px;
+    h1 {
+        color: $darkGray;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 95px;
+        
+    }
+    p {
+        width: 380px;
+        padding: 35px 0 0;
+        color: $gray;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+    }
+}

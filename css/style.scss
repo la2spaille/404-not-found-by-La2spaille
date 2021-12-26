@@ -1,0 +1,42 @@
+@import "./utils/variables";
+@import "./base/base";
+@import "./components/buttons";
+@import "./layouts/header";
+@import "./layouts/sections";
+@import "./pages/404-not-found";
+@media (max-width: 1000px) {
+    header {
+        padding: 20px 0;
+    }
+    .w-header-logo {
+        padding:  0 0 0 25px;
+    }
+    #l-main-section {
+        padding: 35px 0 150px;
+    }
+    .l-2-units-wrapper {
+        flex-direction: column;
+        padding: 0 25px;
+    }
+    .w-404-not-found-img  {
+        width: auto;
+        padding: 0 20px;
+        img {
+            width: 100%;
+        }
+    }
+    .w-404-not-found-dialog {
+        width: 100%;
+        padding: 10px 0;
+        h1 {
+            margin: 0 -24px 0 0;
+            font-size: 48px;
+            line-height: 71px;
+        }
+        p {
+            width: 100%;
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+}

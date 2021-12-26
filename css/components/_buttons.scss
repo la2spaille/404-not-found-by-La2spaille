@@ -1,0 +1,12 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 65px 0 0 ;
+    padding: 25px 45px;
+    color: $white;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    background: $darkGray;
+}
