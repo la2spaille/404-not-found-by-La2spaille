@@ -10,6 +10,7 @@
   list-style: none;
   user-select: none;
   color: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -29,11 +30,17 @@ a {
   align-items: center;
   margin: 65px 0 0;
   padding: 25px 45px;
+  border: 2px solid #333333;
   color: #ffffff;
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
   background: #333333;
+}
+
+.button:hover {
+  background: transparent;
+  color: #333333;
 }
 
 header {
@@ -47,11 +54,30 @@ header {
 }
 
 #logo {
+  position: relative;
   font-family: 'Inconsolata', monospace;
   font-weight: bold;
   font-size: 24px;
   line-height: 25px;
   letter-spacing: -0.08em;
+  color: #333333;
+}
+
+#logo::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  background: #333333;
+  transform: scale(0);
+  transform-origin: center center;
+  transition: 0.7s;
+}
+
+#logo:hover::after {
+  transform: scale(1);
 }
 
 #l-main-section {
@@ -74,6 +100,20 @@ header {
 .w-404-not-found-img img {
   width: 90%;
   height: auto;
+  animation: rotation 7s infinite;
+  transform: rotate(-10deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(7.5deg);
+  }
+  99% {
+    transform: rotate(-17.5px);
+  }
 }
 
 .w-404-not-found-dialog {

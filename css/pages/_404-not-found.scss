@@ -3,7 +3,22 @@
     img {
         width: 90%;
         height: auto;
+        animation: rotation 7s infinite;
+        transform: rotate(-10deg);        
     }
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(7.5deg);
+    }
+    99% {
+        transform: rotate(-17.5px);
+    }
+    
+    
 }
 .w-404-not-found-dialog {
     width: 50%;

@@ -4,9 +4,14 @@
     align-items: center;
     margin: 65px 0 0 ;
     padding: 25px 45px;
+    border: 2px solid $darkGray;
     color: $white;
     font-weight: bold;
     font-size: 14px;
     line-height: 21px;
     background: $darkGray;
+    &:hover {
+        background: transparent;
+        color: $darkGray;
+    }
 }
