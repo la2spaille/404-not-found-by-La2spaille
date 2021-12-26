@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/la2spaille/404-not-found-master-By-La2spaille">
+    <a href="https://vercel.com/la2spaille/404-not-found-master-By-La2spaille">
       Demo
     </a>
     <span> | </span>
-    <a href="https://vercel.com/la2spaille/404-not-found-master-By-La2spaille">
+    <a href="https://github.com/la2spaille/404-not-found-master-By-La2spaille">
       Solution
     </a>
     <span> | </span>
