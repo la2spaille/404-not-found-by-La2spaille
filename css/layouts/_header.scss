@@ -26,7 +26,6 @@ header{
         transform-origin: center center;
         transition: 0.7s;
     }
-
     &:hover {
         &::after {
             transform: scale(1);
