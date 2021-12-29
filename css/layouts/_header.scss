@@ -4,7 +4,8 @@ header{
 }
 .w-header-logo {
     display: flex;
-    padding: 0 0 0 75px;
+    padding: 0  75px;
+    overflow-y: hidden;
 }
 #logo {
     position: relative;
@@ -14,21 +15,27 @@ header{
     line-height: 25px;
     letter-spacing: -0.08em;
     color: $darkGray;
+    transition: 1s;
     &::after {
         content: '';
         display: block;
         width: 100%;
         height: 2px;
         position: absolute;
-        bottom: -5px;
+        bottom: 50%;
         background: $darkGray;
         transform: scale(0);
-        transform-origin: center center;
+        transform-origin: 0 center;
         transition: 0.7s;
     }
-    &:hover {
-        &::after {
-            transform: scale(1);
-        }
+}
+#logo.is-removed {
+    transition: 1s;
+    transform: translateY(100%);
+}
+#logo.is-unavailable {
+    transition: 1s;
+    &::after {
+        transform: scale(1);
     }
 }

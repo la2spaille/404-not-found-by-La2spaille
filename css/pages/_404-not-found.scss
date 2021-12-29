@@ -4,7 +4,15 @@
         width: 90%;
         height: auto;
         animation: rotation 7s infinite;
-        transform: rotate(-10deg);        
+        transform: rotate(-10deg);
+        transition: opacity 5s;
+        animation-play-state: running;
+        &:hover {
+            opacity: 0;
+        }
+        &.is-active {
+            animation-play-state: paused;
+        }
     }
 }
 @keyframes rotation {
@@ -31,7 +39,6 @@
         font-weight: bold;
         font-size: 64px;
         line-height: 95px;
-        
     }
     p {
         width: 380px;
@@ -40,5 +47,8 @@
         font-size: 24px;
         line-height: 36px;
         letter-spacing: -0.035em;
+    }
+    span {
+        cursor: pointer;
     }
 }
